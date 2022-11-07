@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="stretched page-transition" data-loader-html="<div id='css3-spinner-svg-pulse-wrapper'><svg id='css3-spinner-svg-pulse' version='1.2' height='210' width='550' xmlns='https://www.w3.org/2000/svg' viewport='0 0 60 60' xmlns:xlink='https://www.w3.org/1999/xlink'><path id='css3-spinner-pulse' stroke='#DE6262' fill='none' stroke-width='2' stroke-linejoin='round' d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210' /></svg></div>">
+<body class="stretched page-transition" >
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -93,9 +93,9 @@
 
 						<!-- Logo
 						============================================= -->
-						<div id="logo">
-							<a href="index.html" class="standard-logo"><img src="demos/medical/images/logo.png" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo"><img src="demos/medical/images/logo.png" alt="Canvas Logo"></a>
+						<div id="logo" style="margin-bottom: 20px; margin-top:10px;">
+							<a href="index.html" class="standard-logo"><img src="slike/logo.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo"><img src="slike/logo.png" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger">
@@ -107,15 +107,15 @@
 						<nav class="primary-menu style-3 menu-spacing-margin">
 
 							<ul class="menu-container">
-								<li class="menu-item current"><a class="menu-link" href="index.html"><div>Home</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>About Us</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Departments</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Career</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#"><div>Projects</div></a>
+								<li class="menu-item current"><a class="menu-link" href="index.html"><div>Početna</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>O nama</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Pertneri</div></a></li>
+								<!-- <li class="menu-item"><a class="menu-link" href="#"><div>Career</div></a></li> -->
+								<li class="menu-item"><a class="menu-link" href="#"><div>Projekti</div></a>
 									<ul class="sub-menu-container">
-										<li class="menu-item"><a class="menu-link" href="#"><div>2 columns - List style</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="#"><div>3 columns</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="#"><div>4 columns</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div>Atrium cars</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div>Food and Fun</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div>Krušik plastik</div></a></li>
 									</ul>
 								</li>
 								<!-- <li class="menu-item"><a class="menu-link" href="demo-medical-blog.html"><div>Blog</div></a></li> -->
@@ -132,7 +132,7 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element swiper_wrapper min-vh-50 min-vh-md-100" data-loop="true" data-autoplay="5000">
+		<section id="slider" class="slider-element swiper_wrapper min-vh-50 min-vh-md-100 include-headerslider-revolution-html5-videos.html" data-loop="true" data-autoplay="6000">
 			<div class="slider-inner">
 
 				<div class="swiper-container swiper-parent">
@@ -146,7 +146,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: url('demos/medical/images/slider/1.jpg');"></div>
+							<div class="swiper-slide-bg" style="background-image: url('slike/slider6.jpg');"></div>
 						</div>
 						<div class="swiper-slide">
 							<div class="container">
@@ -157,7 +157,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: url('demos/medical/images/slider/2.jpg');"></div>
+							<div class="swiper-slide-bg" style="background-image: url('slike/slider7.jpg');"></div>
 						</div>
 					</div>
 
@@ -173,6 +173,17 @@
 				<div class="container clearfix">
 
 					<div class="row col-mb-50 mb-0">
+						<div class="col-sm-6 col-md-4">
+							<div class="feature-box fbox-plain">
+								<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
+									<a href="#"><i class="icon-medical-i-registration"></i></a>
+								</div>
+								<div class="fbox-content">
+									<h3>Investiranje</h3>
+									<p>Prepoznajemo, pažljivo razmatramo i investiramo u stambene, poslovne, kao i druge relevantne komplekse</p>
+								</div>
+							</div>
+						</div>
 						<div class="col-sm-6 col-md-4">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon" data-animate="bounceIn">
@@ -233,23 +244,13 @@
 							</div>
 						</div>
 
-						<div class="col-sm-6 col-md-4">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
-									<a href="#"><i class="icon-medical-i-registration"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3>Due diligence studije</h3>
-									<p>Due diligence je postupak koji ima za cilj pribavljanje pouzdanih i objektivnih informacija pre donošenja odluke u vezi sa određenom investicijom.</p>
-								</div>
-							</div>
-						</div>
+						
 					</div>
 
 				</div>
 
 				<div class="section row p-0 align-items-stretch dark topmargin-sm">
-					<div class="col-lg-5" style="background: url('demos/medical/images/section-bg.jpg') center center no-repeat; background-size: cover; min-height: 250px;">
+					<div class="col-lg-5" style="background: url('slike/invest.jpg') center center no-repeat; background-size: cover; min-height: 250px;">
 						<div>&nbsp;</div>
 					</div>
 					<div id="booking-appointment-form" class="col-lg-7 p-0">
@@ -324,7 +325,7 @@
 				<div class="container clearfix">
 
 					<div class="row col-mb-50 mb-0">
-						<div class="col-md-7">
+						<div class="col-md-6">
 							<div class="accordion accordion-lg clearfix">
 
 								<div class="accordion-header">
@@ -336,7 +337,7 @@
 										Konsalting
 									</div>
 								</div>
-								<div class="accordion-content clearfix">Atrium preduzeće za pružanje konsultantskih usluga u građevinarstvu, osnovano je 2012. godine. Veliki broj uspešno realizovanih projekata, profesionalizam i višegodišnje iskustvo učinili su da Atrium zauzme svoje mesto na tržištu Srbije, pružajući konsultantske usluge prilikom izgradnje stambeno-poslovnih kompleksa, poslovnih i industrijskih objekata, ugostiteljskih objekata, i drugih objekata.</div>
+								<div class="accordion-content clearfix">Tim visokokvalifikovanih stručnjaka je u svakom trenutku na raspolaganju da vam pruži save i mišljenje u bilo kojoj fazi razvoja projekta.</div>
 
 								<div class="accordion-header">
 									<div class="accordion-icon">
@@ -347,7 +348,7 @@
 										Upravljanje projektima
 									</div>
 								</div>
-								<div class="accordion-content clearfix">Sa ciljem što kvalitetnije realizacije projekta za potrebe naših klijenata angažujemo podizvođače velikim izvođačima, potražujemo klijente za projekte i spajamo investitore.</div>
+								<div class="accordion-content clearfix">Za potreben naših klijenata, a sa ciljem što kvalitetnije realizacije projekta - angažujemo podizvođače velikim izvođačima, potražujemo klijente za projekte i spajamo investitore.</div>
 
 								<div class="accordion-header">
 									<div class="accordion-icon">
@@ -355,12 +356,12 @@
 										<i class="accordion-open icon-remove-circle"></i>
 									</div>
 									<div class="accordion-title">
-										Designing
+										Investiranje
 									</div>
 								</div>
-								<div class="accordion-content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
+								<div class="accordion-content clearfix">Trudimo se da steknemo poverenje klijenata pre početka investiranja, jer se vodimo prepoznavanjem prilika i slušamo njihove želje i potrebe.</div>
 
-								<div class="accordion-header">
+								<!-- <div class="accordion-header">
 									<div class="accordion-icon">
 										<i class="accordion-closed icon-ok-circle"></i>
 										<i class="accordion-open icon-remove-circle"></i>
@@ -380,13 +381,13 @@
 										Commissioning of facilities
 									</div>
 								</div>
-								<div class="accordion-content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
+								<div class="accordion-content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div> -->
 
 							</div>
 						</div>
 
-						<div class="col-md-5">
-							<h4>Current projects<span>.</span></h4>
+						<div class="col-md-6">
+							<h4>Trenutni projekti<span>.</span></h4>
 							<ul class="testimonials-grid grid-1">
 								<li class="grid-item pt-0">
 									<div class="testimonial">
@@ -394,10 +395,10 @@
 											<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
 										</div>
 										<div class="test-content">
-											<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
+											<p>Projekat izgradnje komunalne (kanalizacione) infrastrukture i infrastrukture za odlaganje komunalnog čvrstog otpada. </p>
 											<div class="testi-meta">
 												Kladovo, Serbia
-												<span>CRBC Inc.</span>
+												<span>Projekat Čista Srbija</span>
 											</div>
 										</div>
 									</div>
@@ -408,10 +409,10 @@
 											<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
 										</div>
 										<div class="test-content">
-											<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+											<p>Projekat izgradnje komunalne (kanalizacione) infrastrukture i infrastrukture za odlaganje komunalnog čvrstog otpada.</p>
 											<div class="testi-meta">
 												Kragujevac, Serbia
-												<span>CRBC Inc.</span>
+												<span>Projekat Čista Srbija</span>
 											</div>
 										</div>
 									</div>
@@ -425,7 +426,7 @@
 
 				</div>
 
-				<div class="section mt-0">
+				<!-- <div class="section mt-0">
 					<div class="container clearfix">
 
 						<div class="row">
@@ -482,7 +483,7 @@
 						</div>
 
 					</div>
-				</div>
+				</div> -->
 
 				<div class="container clearfix">
 					<div class="heading-block center border-bottom-0">
@@ -497,7 +498,7 @@
 								<img src="demos/medical/images/doctors/3.jpg" alt="Dr. John Doe">
 							</div>
 							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Infrastructure</span></div>
+								<div class="team-title"><h4>Atrium Cars</h4><span>Investiranje</span></div>
 							</div>
 						</div>
 
@@ -506,7 +507,7 @@
 								<img src="demos/medical/images/doctors/2.jpg" alt="Dr. John Doe">
 							</div>
 							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>High-rise construction</span></div>
+								<div class="team-title"><h4>FOOD and FUN</h4><span>Investiranje</span></div>
 							</div>
 						</div>
 
@@ -515,7 +516,7 @@
 								<img src="demos/medical/images/doctors/1.jpg" alt="Dr. John Doe">
 							</div>
 							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Low construction</span></div>
+								<div class="team-title"><h4>Auto put</h4><span>Konsalting</span></div>
 							</div>
 						</div>
 
@@ -524,7 +525,7 @@
 								<img src="demos/medical/images/doctors/4.jpg" alt="Dr. John Doe">
 							</div>
 							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Sewerage</span></div>
+								<div class="team-title"><h4>Kanalizaciona mreža</h4><span>Projektovanje</span></div>
 							</div>
 						</div>
 
