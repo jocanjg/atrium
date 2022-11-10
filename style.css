@@ -5906,6 +5906,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 	.swiper_wrapper .slider-caption h2 {
 		font-size: 5.5vw;
+		text-align: right;
 	}
 
 	.swiper_wrapper .slider-caption p {
