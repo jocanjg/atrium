@@ -7,36 +7,65 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:400,700|Crete+Round:400i&display=swap" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-
-	<!-- Medical Demo Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/medical/medical.css" type="text/css" />
-	<!-- / -->
-
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="demos/medical/css/medical-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="demos/medical/fonts.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link rel="stylesheet" href="css/colors.php?color=DE6262" type="text/css" />
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
 
 	<!-- Document Title
 	============================================= -->
-	<title>Atrium Investment | Home</title>
+	<title>Revolution Slider - HTML5 Videos | Canvas</title>
+
+	<style>
+
+		.revo-slider-emphasis-text {
+			font-size: 64px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			font-family: 'Poppins', sans-serif;
+			padding: 15px 20px;
+			border-top: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+		}
+
+		.revo-slider-desc-text {
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			width: 650px;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		.revo-slider-caps-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.tp-video-play-button { display: none !important; }
+
+		.tp-caption { white-space: nowrap; }
+
+	</style>
 
 </head>
 
-<body class="stretched page-transition" >
+<body class="stretched">
 
+	
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
@@ -106,20 +135,17 @@
 						============================================= -->
 						<nav class="primary-menu style-3 menu-spacing-margin">
 
+						
 							<ul class="menu-container">
-								<li class="menu-item current"><a class="menu-link" href="home.html"><div>Početna</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="index.html"><div>O nama</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="index.html"><div>Početna</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="onama.html"><div>O nama</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#"><div>Pertneri</div></a></li>
 								<!-- <li class="menu-item"><a class="menu-link" href="#"><div>Career</div></a></li> -->
-								<li class="menu-item"><a class="menu-link" href="#"><div>Projekti</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item"><a class="menu-link" href="#"><div>Atrium cars</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="#"><div>Food and Fun</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="#"><div>Krušik plastik</div></a></li>
-									</ul>
+								<li class="menu-item"><a class="menu-link" href="projekti.html"><div>Projekti</div></a>
+									
 								</li>
 								<!-- <li class="menu-item"><a class="menu-link" href="demo-medical-blog.html"><div>Blog</div></a></li> -->
-								<li class="menu-item"><a class="menu-link" href="#"><div>Contact</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Kontakt</div></a></li>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -128,48 +154,281 @@
 				</div>
 			</div>
 			<div class="header-wrap-clone"></div>
-		</header><!-- #header end -->
+		</header>
 
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-element swiper_wrapper min-vh-50 min-vh-md-100 include-headerslider-revolution-html5-videos.html" data-loop="true" data-autoplay="6000">
+		<section id="slider" class="slider-element slider-parallax revslider-wrap min-vh-0 include-header">
 			<div class="slider-inner">
+				<!--
+				#################################
+					- THEMEPUNCH BANNER -
+				#################################
+				-->
+				<div id="rev_slider_779_1_wrapper" class="rev_slider_wrapper fullwidth-container" data-alias="default-slider" style="padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.1.4 fullwidth mode -->
+					<div id="rev_slider_779_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.1.4">
+						<ul>    <!-- SLIDE  -->
+							<li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="../slike/slide1.jpg"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"  data-title="Atrium investment group">
+								<!-- MAIN IMAGE -->
+								<img src="slike/slide1.jpg"  alt="video_woman_cover3"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
 
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="container">
-								<div class="slider-caption slider-caption-right" style="max-width: 700px;">
-									<div>
-										<h2 data-animate="flipInX">Team of <span>Experts.</span></h2>
-										<p class="d-none d-sm-block" data-animate="flipInX" data-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
+								<!-- LAYER NR. 1 -->
+								<div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+									data-forcerewind="on"
+									data-volume="mute"
+									data-videowidth="100%"
+									data-videoheight="100%"
+									data-videomp4="C0004_1.mp4"
+									data-videopreload="preload"
+									data-videoloop="none"
+									data-forceCover="1"
+									data-aspectratio="16:9"
+									data-autoplay="true"
+									data-autoplayonlyfirsttime="false"
+									data-nextslideatend="true"
+						 			style="z-index: 2;">
 								</div>
-							</div>
-							<div class="swiper-slide-bg" style="background-image: url('slike/slider6.jpg');"></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="container">
-								<div class="slider-caption">
-									<div>
-										<h2 data-animate="zoomIn">Atrium<span>Counsulting</span>.</h2>
-										<p class="d-none d-sm-block" data-animate="zoomIn" data-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									</div>
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								data-x="['left','left','left','left']" data-hoffset="['600','50','50','30']"
+								data-y="['top','top','top','top']" data-voffset="['235','235','235','235']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #FFF; white-space: nowrap;">Dobrodošli u</div>
+
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="['left','left','left','left']" data-hoffset="['600','50','50','30']"
+								data-y="['top','top','top','top']" data-voffset="['260','260','260','260']"
+								data-fontsize="['60','60','44','44']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #FFF; font-size: 60px; white-space: nowrap;">Atrium insvestment</div>
+
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text text-start"
+								data-x="['left','left','left','left']" data-hoffset="['600','50','50','30']"
+								data-y="['top','top','top','top']" data-voffset="['360','360','360','360']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1600"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-width="['550','550','480','360']"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; color: #FFF; max-width: 550px; white-space: normal;">od 2012 godine investiramo, pružamo konsultantske usluge i uspešno planiramo i realizujemo projekte u oblastima niskogradnje i visokogradnje.</div>
+
+								<div class="tp-caption customin ltl tp-resizeme"
+								data-x="['left','left','left','left']" data-hoffset="['600','50','50','30']"
+								data-y="['top','top','top','top']" data-voffset="['470','470','470','470']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="onama.html" class="button button-border button-large button-light button-rounded text-end m-0"><span>Više o nama</span><i class="icon-angle-right"></i></a></div>
+
+							</li>
+							<!-- SLIDE  -->
+							<li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="../slike/slide2.jpg"  data-saveperformance="off"  data-title="Mobile Ready Design">
+								<!-- MAIN IMAGE -->
+								<img src="slike/slide2.jpg"  alt="video_typing_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+									data-forcerewind="on"
+									data-volume="mute"
+									data-videowidth="100%"
+									data-videoheight="100%"
+									data-videomp4="include/rs-plugin/demos/assets/videos/space.mp4"
+									data-videopreload="preload"
+									data-videoloop="none"
+									data-forceCover="1"
+									data-aspectratio="16:9"
+									data-autoplay="true"
+									data-autoplayonlyfirsttime="false"
+									data-nextslideatend="true">
 								</div>
-							</div>
-							<div class="swiper-slide-bg" style="background-image: url('slike/slider7.jpg');"></div>
-						</div>
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text text-uppercase"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="235"
+								data-fontsize="['60','60','46','38']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;">Pupinov most</div>
+
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="400"
+								data-width="['650','650','480','360']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;">Veliki broj uspešno realizovanih projekata, profesionalnost i višegodišnje iskustvo</div>
+
+								<div class="tp-caption customin ltl tp-resizeme"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="503"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1350"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="projekti.html" class="button button-border button-white button-light button-large button-rounded text-end m-0"><span>Realizovani projekti</span><i class="icon-angle-right"></i></a></div>
+
+							</li>
+							<!-- SLIDE  -->
+							<li class="dark" data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="images/slider/rev/main/s1-thumb.jpg"  data-saveperformance="off"  data-title="Infinite Possibilities">
+								<!-- MAIN IMAGE -->
+								<img src="images/videos/explore-poster.jpg"  alt="video_space_cover"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+								<!-- LAYERS -->
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+									data-forcerewind="on"
+									data-volume="mute"
+									data-videowidth="100%"
+									data-videoheight="100%"
+									data-videomp4="images/videos/explore.mp4"
+									data-videopreload="preload"
+									data-videoloop="none"
+									data-forceCover="1"
+									data-aspectratio="16:9"
+									data-autoplay="true"
+									data-autoplayonlyfirsttime="false"
+									data-nextslideatend="true"
+									>
+								</div>
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="235"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;">Učestvovanje u projektu</div>
+
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="260"
+								data-fontsize="['60','60','46','38']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;">ČISTA SRBIJA</div>
+
+								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="370"
+								data-width="['650','650','480','360']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;">Projekat izgradnje komunalne (kanalizacione) infrastrukture i infrastrukture za odlaganje komunalnog čvrstog otpada.</div>
+
+								<div class="tp-caption customin ltl tp-resizeme"
+								data-x="center" data-hoffset="0"
+								data-y="top" data-voffset="478"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="https://cistasrbija.rs/" class="button button-border button-white button-light button-large button-rounded text-end m-0"><span>Više informacija</span><i class="icon-angle-right"></i></a></div>
+
+							</li>
+						</ul>
 					</div>
-
-				</div>
-
+				</div><!-- END REVOLUTION SLIDER -->
 			</div>
-		</section><!-- #slider end -->
+		</section>
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
 			<div class="content-wrap">
+
+				<div class="promo promo-full promo-border p-5 header-stick bottommargin-lg">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 col-lg">
+								<h3 style="text-align:center;"> <span>14</span> uspešno realizovanih projekata, profesionalnost i višegodišnje iskustvo </h3>
+								<span style="text-align:center;">učinili su da Atrium investment group zauzme vodeće mesto na tržištu sa misijom da bude sinonim za pouzdanost i sigurnost.</span>
+							</div>
+							<!-- <div class="col-12 col-lg-auto mt-4 mt-lg-0">
+								<a href="#" class="button button-reveal button-large button-circle text-end m-0"><i class="icon-angle-right"></i><span>Browse Now</span></a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+
 				<div class="container clearfix">
 
 					<div class="row col-mb-50 mb-0">
@@ -196,18 +455,7 @@
 							</div>
 						</div>
 
-						<div class="col-sm-6 col-md-4">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-									<a href="#"><i class="icon-medical-i-volume-control"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3>Tehnička kontrola</h3>
-									<p>Atrium investment group obezbeđuje projektnu dokumentaciju koja je u skladu sa važećom regulativom i sa potrebama klijenata</p>
-								</div>
-							</div>
-						</div>
-
+						
 						<div class="col-sm-6 col-md-4">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
@@ -220,350 +468,98 @@
 							</div>
 						</div>
 
-						<div class="col-sm-6 col-md-4">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon" data-animate="bounceIn">
-									<a href="#"><i class="icon-medical-i-elevators"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3>Nadzor i kontrola kvaliteta</h3>
-									<p>Kontrola kvaliteta predstavlja set mera preduzetih sa ciljem da se obezbedi određeni nivo kvaliteta izvedenih radova u skladu sa projektovanim rešenjem i relevantnim standardima i propisima.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-6 col-md-4">
-							<div class="feature-box fbox-plain">
-								<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-									<a href="#"><i class="icon-medical-i-billing"></i></a>
-								</div>
-								<div class="fbox-content">
-									<h3>Upravljanje troškovima</h3>
-									<p>Planiranje i kontrola troškova omogućavaju optimizaciju projekta i upravljanje izgradnjom u skladu sa odobrenim budžetom.</p>
-								</div>
-							</div>
-						</div>
+					
 
 						
 					</div>
 
-				</div>
-
-				<div class="section row p-0 align-items-stretch dark topmargin-sm">
-					<div class="col-lg-5" style="background: url('slike/invest.jpg') center center no-repeat; background-size: cover; min-height: 250px;">
-						<div>&nbsp;</div>
-					</div>
-					<div id="booking-appointment-form" class="col-lg-7 p-0">
-						<div class="bg-color form-widget col-padding" data-loader="button">
-							<h2>Potrebna vam je kvalitetna i stručna realizacija projekta? Na pravom ste mestu.</h2>
-							<div class="form-result"></div>
-							<form class="row mb-0" id="template-medical-form" name="template-medical-form" action="include/form.php" method="post">
-								<div class="form-process">
-									<div class="css3-spinner">
-										<div class="css3-spinner-scaler"></div>
-									</div>
-								</div>
-								<div class="col-md-8 form-group">
-									<label for="template-medical-name">Ime i prezime:</label>
-									<input type="text" id="template-medical-name" name="template-medical-name" class="form-control not-dark required" value="">
-								</div>
-								<div class="col-md-4 form-group">
-									<label for="template-medical-phone">Telefon:</label>
-									<input type="text" id="template-medical-phone" name="template-medical-phone" class="form-control not-dark required" value="">
-								</div>
-								<div class="w-100"></div>
-								<div class="col-md-8 form-group">
-									<label for="template-medical-email">Email:</label>
-									<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
-								</div>
-								<div class="col-md-8 form-group">
-									<label for="template-medical-email">Poruka:</label>
-									<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
-								</div>
-								<!-- <div class="col-md-4 form-group">
-									<label for="template-medical-dob">Date of Birth:</label>
-									<input type="text" id="template-medical-dob" name="template-medical-dob" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
-								</div> -->
-								<div class="w-100"></div>
-								<!-- <div class="col-md-5">
-									<div class="row">
-										<div class="col-12 form-group">
-											<label for="template-medical-appoint-date">Appointment Date:</label>
-											<input type="text" id="template-medical-appoint-date" name="template-medical-appoint-date" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
-										</div>
-										<div class="col-12 form-group">
-											<label for="template-medical-second-booking">Booked with us Before?</label><br>
-											<label class="rightmargin-sm">
-												<input type="radio" id="template-medical-second-booking" name="template-medical-second-booking" value="yes">
-												Yes
-											</label>
-											<label>
-												<input type="radio" name="template-medical-second-booking" value="no" checked>
-												No
-											</label>
-										</div>
-									</div>
-								</div> -->
-								<!-- <div class="col-md-7 form-group">
-									<label for="template-medical-message">Message:</label>
-									<textarea id="template-medical-message" name="template-medical-message" class="form-control not-dark required" cols="30" rows="5"></textarea>
-								</div> -->
-								<!-- <div class="w-100"></div> -->
-								<div class="col-12 form-group d-none">
-									<input type="text" name="template-medical-botcheck" value="" />
-								</div>
-								<div class="col-12 form-group text-end">
-									<button class="button button-white button-light button-rounded m-0" type="submit" value="submit">Pošalji upit </button>
-								</div>
-								<input type="hidden" name="prefix" value="template-medical-">
-							</form>
-
+					<div class="section row p-0 align-items-stretch dark topmargin-sm">
+						<div class="col-lg-5" style="background: url('slike/invest.jpg') center center no-repeat; background-size: cover; min-height: 250px;">
+							<div>&nbsp;</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="container clearfix">
-
-					<div class="row col-mb-50 mb-0">
-						<div class="col-md-6">
-							<div class="accordion accordion-lg clearfix">
-
-								<div class="accordion-header">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-ok-circle"></i>
-										<i class="accordion-open icon-remove-circle"></i>
-									</div>
-									<div class="accordion-title">
-										Konsalting
-									</div>
-								</div>
-								<div class="accordion-content clearfix">Tim visokokvalifikovanih stručnjaka je u svakom trenutku na raspolaganju da vam pruži save i mišljenje u bilo kojoj fazi razvoja projekta.</div>
-
-								<div class="accordion-header">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-ok-circle"></i>
-										<i class="accordion-open icon-remove-circle"></i>
-									</div>
-									<div class="accordion-title">
-										Upravljanje projektima
-									</div>
-								</div>
-								<div class="accordion-content clearfix">Za potreben naših klijenata, a sa ciljem što kvalitetnije realizacije projekta - angažujemo podizvođače velikim izvođačima, potražujemo klijente za projekte i spajamo investitore.</div>
-
-								<div class="accordion-header">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-ok-circle"></i>
-										<i class="accordion-open icon-remove-circle"></i>
-									</div>
-									<div class="accordion-title">
-										Investiranje
-									</div>
-								</div>
-								<div class="accordion-content clearfix">Trudimo se da steknemo poverenje klijenata pre početka investiranja, jer se vodimo prepoznavanjem prilika i slušamo njihove želje i potrebe.</div>
-
-								<!-- <div class="accordion-header">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-ok-circle"></i>
-										<i class="accordion-open icon-remove-circle"></i>
-									</div>
-									<div class="accordion-title">
-										Construction
-									</div>
-								</div>
-								<div class="accordion-content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div>
-
-								<div class="accordion-header">
-									<div class="accordion-icon">
-										<i class="accordion-closed icon-ok-circle"></i>
-										<i class="accordion-open icon-remove-circle"></i>
-									</div>
-									<div class="accordion-title">
-										Commissioning of facilities
-									</div>
-								</div>
-								<div class="accordion-content clearfix">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</div> -->
-
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<h4>Trenutni projekti<span>.</span></h4>
-							<ul class="testimonials-grid grid-1">
-								<li class="grid-item pt-0">
-									<div class="testimonial">
-										<div class="testi-image">
-											<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+						<div id="booking-appointment-form" class="col-lg-7 p-0">
+							<div class="bg-color form-widget col-padding" data-loader="button">
+								<h2>Potrebna vam je kvalitetna i stručna realizacija projekta? Na pravom ste mestu.</h2>
+								<div class="form-result"></div>
+								<form class="row mb-0" id="template-medical-form" name="template-medical-form" action="include/form.php" method="post">
+									<div class="form-process">
+										<div class="css3-spinner">
+											<div class="css3-spinner-scaler"></div>
 										</div>
-										<div class="test-content">
-											<p>Projekat izgradnje komunalne (kanalizacione) infrastrukture i infrastrukture za odlaganje komunalnog čvrstog otpada. </p>
-											<div class="testi-meta">
-												Kladovo, Serbia
-												<span>Projekat Čista Srbija</span>
+									</div>
+									<div class="col-md-8 form-group">
+										<label for="template-medical-name">Ime i prezime:</label>
+										<input type="text" id="template-medical-name" name="template-medical-name" class="form-control not-dark required" value="">
+									</div>
+									<div class="col-md-4 form-group">
+										<label for="template-medical-phone">Telefon:</label>
+										<input type="text" id="template-medical-phone" name="template-medical-phone" class="form-control not-dark required" value="">
+									</div>
+									<div class="w-100"></div>
+									<div class="col-md-8 form-group">
+										<label for="template-medical-email">Email:</label>
+										<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
+									</div>
+									<div class="col-md-8 form-group">
+										<label for="template-medical-email">Poruka:</label>
+										<input type="email" id="template-medical-email" name="template-medical-email" class="form-control not-dark required" value="">
+									</div>
+									<!-- <div class="col-md-4 form-group">
+										<label for="template-medical-dob">Date of Birth:</label>
+										<input type="text" id="template-medical-dob" name="template-medical-dob" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
+									</div> -->
+									<div class="w-100"></div>
+									<!-- <div class="col-md-5">
+										<div class="row">
+											<div class="col-12 form-group">
+												<label for="template-medical-appoint-date">Appointment Date:</label>
+												<input type="text" id="template-medical-appoint-date" name="template-medical-appoint-date" class="form-control not-dark required" value="" placeholder="DD/MM/YYYY">
+											</div>
+											<div class="col-12 form-group">
+												<label for="template-medical-second-booking">Booked with us Before?</label><br>
+												<label class="rightmargin-sm">
+													<input type="radio" id="template-medical-second-booking" name="template-medical-second-booking" value="yes">
+													Yes
+												</label>
+												<label>
+													<input type="radio" name="template-medical-second-booking" value="no" checked>
+													No
+												</label>
 											</div>
 										</div>
+									</div> -->
+									<!-- <div class="col-md-7 form-group">
+										<label for="template-medical-message">Message:</label>
+										<textarea id="template-medical-message" name="template-medical-message" class="form-control not-dark required" cols="30" rows="5"></textarea>
+									</div> -->
+									<!-- <div class="w-100"></div> -->
+									<div class="col-12 form-group d-none">
+										<input type="text" name="template-medical-botcheck" value="" />
 									</div>
-								</li>
-								<li class="grid-item pb-0">
-									<div class="testimonial">
-										<div class="testi-image">
-											<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-										</div>
-										<div class="test-content">
-											<p>Projekat izgradnje komunalne (kanalizacione) infrastrukture i infrastrukture za odlaganje komunalnog čvrstog otpada.</p>
-											<div class="testi-meta">
-												Kragujevac, Serbia
-												<span>Projekat Čista Srbija</span>
-											</div>
-										</div>
+									<div class="col-12 form-group text-end">
+										<button class="button button-white button-light button-rounded m-0" type="submit" value="submit">Pošalji upit </button>
 									</div>
-								</li>
-							</ul>
-							<div class="w-100 text-end">
-								<a href="#" class="button button-mini button-rounded me-0">Više o projektima...</a>
+									<input type="hidden" name="prefix" value="template-medical-">
+								</form>
+	
 							</div>
 						</div>
 					</div>
 
-				</div>
-
-				<!-- <div class="section mt-0">
-					<div class="container clearfix">
-
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box fbox-outline fbox-dark fbox-effect clearfix">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-stack i-alt"></i></a>
-									</div>
-									<div class="fbox-content">
-										<div class="counter counter-small"><span data-from="100" data-to="23331" data-refresh-interval="200" data-speed="2500"></span>+</div>
-										<h5 class="m-0 color">Kilometers</h5>
-										<div class="d-block d-md-block d-lg-none bottommargin"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box fbox-outline fbox-dark fbox-effect clearfix">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-tint i-alt"></i></a>
-									</div>
-									<div class="fbox-content">
-										<div class="counter counter-small"><span data-from="100" data-to="56841" data-refresh-interval="250" data-speed="2000"></span>+</div>
-										<h5 class="m-0 color">Pipes</h5>
-										<div class="d-block d-md-block d-lg-none bottommargin"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box fbox-outline fbox-dark fbox-effect clearfix">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-tint i-alt"></i></a>
-									</div>
-									<div class="fbox-content">
-										<div class="counter counter-small"><span data-from="100" data-to="332" data-refresh-interval="50" data-speed="3000"></span>+</div>
-										<h5 class="m-0 color">Worldwide Staff</h5>
-										<div class="d-block d-md-none bottommargin"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-md-6">
-								<div class="feature-box fbox-outline fbox-dark fbox-effect clearfix">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-text-width i-alt"></i></a>
-									</div>
-									<div class="fbox-content">
-										<div class="counter counter-small"><span data-from="100" data-to="2213" data-refresh-interval="110" data-speed="3500"></span>+</div>
-										<h5 class="m-0 color">Lorem Ipsum</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div> -->
-
-				<div class="container clearfix">
+					<div class="clear"></div><div class="line"></div>
 					<div class="heading-block center border-bottom-0">
-						<h3>Realizovani projekti<span>.</span></h3>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						<h3>Partneri i projekti<span>.</span></h3>
+						
 					</div>
+					<div id="oc-clients-full" class="owl-carousel image-carousel carousel-widget" data-margin="30" data-nav="false" data-loop="true" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
 
-					<div id="oc-team" class="owl-carousel team-carousel carousel-widget" data-margin="30" data-nav="true" data-pagi="true" data-items-xs="1" data-items-sm="2" data-items-lg="3" data-items-xl="4">
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/3.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Atrium Cars</h4><span>Investiranje</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/2.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>FOOD and FUN</h4><span>Investiranje</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/1.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Auto put</h4><span>Konsalting</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/4.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Kanalizaciona mreža</h4><span>Projektovanje</span></div>
-							</div>
-						</div>
-
-						<!-- <div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/6.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Lorem</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/7.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Lorem</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/8.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Lorem</span></div>
-							</div>
-						</div>
-
-						<div class="team">
-							<div class="team-image">
-								<img src="demos/medical/images/doctors/9.jpg" alt="Dr. John Doe">
-							</div>
-							<div class="team-desc">
-								<div class="team-title"><h4>Lorem ipsum</h4><span>Lorem</span></div>
-							</div>
-						</div> -->
+						<a href="#"><img src="slike/client1.png" alt="Clients"></a>
+						<a href="#"><img src="slike/client2.png" alt="Clients"></a>
+						<a href="#"><img src="slike/client4.png" alt="Clients"></a>
+						<a href="#"><img src="slike/client5.png" alt="Clients"></a>
+						<a href="#"><img src="slike/client6.png" alt="Clients"></a>
+						<a href="#"><img src="slike/client7.png" alt="Clients"></a>
+						
 
 					</div>
 
@@ -591,22 +587,14 @@
 										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="sm-form-control required email" placeholder="Enter your Email to Subscribe to our Newsletter">
 									</div>
 									<div class="col-lg-3">
-										<button class="button button-rounded m-0 center w-100" type="submit">Subscribe</button>
+										<button class="button button-rounded m-0 center w-100" type="submit">Newsletter</button>
 									</div>
 								</form>
 
 								<div class="line line-sm"></div>
 
 								<div class="row col-mb-30">
-									<div class="col-lg-3 col-6 widget_links">
-										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">FAQs</a></li>
-											<li><a href="#">Support</a></li>
-											<li><a href="#">Contact</a></li>
-										</ul>
-									</div>
+								
 
 									<!-- <div class="col-lg-3 col-6 widget_links">
 										<ul>
@@ -650,14 +638,14 @@
 								<div class="row col-mb-30">
 									<div class="col-lg-12">
 										<div class="footer-big-contacts">
-											<span>Call Us:</span>
-											(1) 22 55412474
+											<span>Kontakt:</span>
+											(381) 34 123456
 										</div>
 									</div>
 
 									<div class="col-lg-12">
 										<div class="footer-big-contacts">
-											<span>Send an Email:</span>
+											<span>Email:</span>
 											info@atriuminvestment.rs
 										</div>
 									</div>
@@ -667,22 +655,7 @@
 
 							<div class="widget subscribe-widget clearfix">
 
-								<div class="row col-mb-30">
-									<div class="col-sm-6 col-md-12 col-lg-6 clearfix">
-										<a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
-											<i class="icon-facebook"></i>
-											<i class="icon-facebook"></i>
-										</a>
-										<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-									</div>
-									<div class="col-sm-6 col-md-12 col-lg-6 clearfix">
-										<a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
-											<i class="icon-rss"></i>
-											<i class="icon-rss"></i>
-										</a>
-										<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-									</div>
-								</div>
+								
 
 							</div>
 
@@ -699,13 +672,13 @@
 
 					<div class="row col-mb-30">
 						<div class="col-md-6 text-center text-md-start">
-							Copyrights &copy; 2020 All Rights Reserved by Atrium investment.<br>
+							Copyrights &copy; 2022 All Rights Reserved by Atrium investment.<br>
 							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
 						</div>
 
 						<div class="col-md-6 text-center text-md-end">
 							<div class="copyrights-menu copyright-links clearfix">
-								<a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
+								<a href="index.html">Početna</a>/<a href="onama.html">O nama</a>/<a href="#">Partneri</a>/<a href="projekti.html">Projekti</a>/<a href="#">FAQs</a>/<a href="#">Kontakt</a>
 							</div>
 						</div>
 					</div>
@@ -718,7 +691,7 @@
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up rounded-circle"></div>
+	<div id="gotoTop" class="icon-angle-up"></div>
 
 	<!-- JavaScripts
 	============================================= -->
@@ -728,6 +701,154 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+
+	<script>
+		var tpj=jQuery;
+		tpj.noConflict();
+		var $ = jQuery.noConflict();
+
+		tpj(document).ready(function() {
+			var apiRevoSlider = tpj('#rev_slider_779_1').show().revolution(
+			{
+				sliderType:"standard",
+				jsFileLocation:"include/rs-plugin/js/",
+				dottedOverlay:"none",
+				sliderLayout: "fullwidth",
+				delay:9000,
+				responsiveLevels: [1240, 1024, 778, 480],
+				visibilityLevels: [1240, 1024, 778, 480],
+				gridwidth: [1200, 1024, 778, 480],
+				gridheight: [700, 768, 960, 720],
+				hideThumbs:200,
+
+				thumbWidth:100,
+				thumbHeight:50,
+				thumbAmount:3,
+
+				touchenabled:"on",
+				onHoverStop:"on",
+
+				swipe_velocity: 0.7,
+				swipe_min_touches: 1,
+				swipe_max_touches: 1,
+				drag_block_vertical: false,
+
+
+				navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        },
+                        arrows: {
+                            style: "hades",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_onleave: false,
+                            tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div></div>',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 10,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 10,
+                                v_offset: 0
+                            }
+                        },
+                        thumbnails: {
+                            style: "hades",
+                            enable: true,
+                            width: 50,
+                            height: 50,
+                            min_width: 100,
+                            wrapper_padding: 5,
+                            wrapper_color: "transparent",
+                            wrapper_opacity: "1",
+                            tmp: '<span class="tp-thumb-img-wrap">  <span class="tp-thumb-image"></span></span>',
+                            visibleAmount: 5,
+                            hide_onmobile: false,
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            span: false,
+                            position: "inner",
+                            space: 5,
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 20
+                        }
+                    },
+
+				soloArrowLeftHalign:"left",
+				soloArrowLeftValign:"center",
+				soloArrowLeftHOffset:20,
+				soloArrowLeftVOffset:0,
+
+				soloArrowRightHalign:"right",
+				soloArrowRightValign:"center",
+				soloArrowRightHOffset:20,
+				soloArrowRightVOffset:0,
+
+				shadow:0,
+				fullWidth:"off",
+				fullScreen:"on",
+
+				spinner:"spinner0",
+
+				stopLoop:"off",
+				stopAfterLoops:-1,
+				stopAtSlide:-1,
+
+				shuffle:"off",
+
+
+				forceFullWidth:"off",
+				fullScreenAlignForce:"off",
+
+				hideThumbsOnMobile:"off",
+				hideNavDelayOnMobile:1500,
+				hideBulletsOnMobile:"off",
+				hideArrowsOnMobile:"off",
+				hideThumbsUnderResolution:0,
+
+				hideSliderAtLimit:0,
+				hideCaptionAtLimit:0,
+				hideAllCaptionAtLilmit:0,
+				startWithSlide:0,
+			});
+
+			apiRevoSlider.on("revolution.slide.onloaded",function (e) {
+				setTimeout( function(){ SEMICOLON.slider.sliderDimensions(); }, 200 );
+			});
+
+			apiRevoSlider.on("revolution.slide.onchange",function (e,data) {
+				SEMICOLON.slider.revolutionSliderMenu();
+			});
+		}); //ready
+	</script>
 
 </body>
 </html>
